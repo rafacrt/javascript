@@ -8,6 +8,7 @@
     <style>
         div#area{
             background: rgb(42, 139, 42);
+            font: normal 20pt araial;
             color: white;
             width: 200px;
             height: 200px;
@@ -17,12 +18,18 @@
     </style>
 </head>
 <body>
-    <div id="area" onClick="clicar">
+    <div id="area" onClick="clicar()">
         Interaja
     </div>
 
     <script>
+        function clicar(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+        }
+
+    <script>
         
-    </script>
+    
 </body>
 </html>
